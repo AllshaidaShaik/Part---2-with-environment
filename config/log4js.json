@@ -1,0 +1,16 @@
+{
+    "appenders": {
+        "out": { "type": "console" },
+        "task": { "type": "file",
+        "filename" : "logs/application.log",
+        "maxLogSize":20480,
+        "backups": 3
+     }
+     
+    },
+    "categories": {
+    "default": { "appenders": [ "out" ], "level": "ALL" },
+    "task": { "appenders": [ "task" ], "level": "ERROR" }
+  }
+  }
+   

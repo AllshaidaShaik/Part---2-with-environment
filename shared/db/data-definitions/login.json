@@ -1,0 +1,40 @@
+{
+    "dataDefinitions": {
+        "login_id": {
+            "type": "DataTypes.INTEGER",
+            "primaryKey": true,
+            "autoIncrement": true,
+            "allowNull": false
+        },
+        "user_name": {
+            "type": "DataTypes.STRING",
+            "allowNull": false
+        },
+        "password": {
+            "type": "DataTypes.STRING",
+            "allowNull": false
+        },
+        "active": {
+            "type": "DataTypes.INTEGER",
+            "allowNull": false
+        }
+    },
+    "list": {
+        "tableInfo": {
+            "type": "table",
+            "name": "login",
+            "baseQuery": "select * from login",
+            "whereClause": "login_id",
+            "order": "desc"
+        }
+    },
+    "detail": {
+        "tableInfo": {
+            "type": "table",
+            "name": "login",
+            "baseQuery": "select * from login",
+            "whereClause": "login_id",
+            "order": "desc"
+        }
+    }
+}
